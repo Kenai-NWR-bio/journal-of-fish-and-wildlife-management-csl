@@ -63,7 +63,7 @@
   <macro name="access">
     <choose>
       <if variable="URL" match="any">
-        <group delimiter=" ">
+        <group prefix="Available: " delimiter=" ">
           <text variable="URL"/>
           <group prefix=" (" suffix=")" delimiter=" ">
             <date variable="accessed" delimiter=" ">
